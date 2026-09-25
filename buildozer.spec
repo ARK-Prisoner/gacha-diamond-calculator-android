@@ -35,8 +35,8 @@ orientation = portrait
 # (bool) 是否全屏
 fullscreen = 0
 
-# (str) 支持的 CPU 架构
-android.archs = arm64-v8a, armeabi-v7a
+# (str) 支持的 CPU 架构（只编 arm64，编译更快；现代手机都是 arm64）
+android.archs = arm64-v8a
 
 # (str) Android NDK 版本（锁定 r25b，与 python3.11 + kivy 兼容；默认 r28c 过新会导致编译失败）
 android.ndk = 25b

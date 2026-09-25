@@ -50,7 +50,9 @@ jobs:
           path: |
             .buildozer
             ~/.cache/pip
-          key: buildozer-${{ runner.os }}-${{ hashFiles('buildozer.spec') }}
+          key: buildozer-${{ runner.os }}-sdk-v2
+          restore-keys: |
+            buildozer-${{ runner.os }}-
 
       - name: Remove preinstalled Android SDK (free disk / avoid conflict)
         run: sudo rm -rf /usr/local/lib/android
