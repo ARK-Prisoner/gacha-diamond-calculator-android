@@ -16,7 +16,7 @@ source.dir = .
 source.include_exts = py,png,jpg,kv,atlas,ttf,otf,ttc
 
 # (str) 应用版本号
-version = 0.1
+version = 1.0
 
 # (list) 运行时依赖
 # 通过 p4a.branch 锁定 python-for-android 到 v2024.01.21（其默认 Python 3.11.5，Kivy 2.3.x 兼容）
